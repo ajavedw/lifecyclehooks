@@ -7,33 +7,35 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   private _number: number = 2333;
-  private _getsetTest: number = 5;
 
-  get gsTest(){
-    return this._getsetTest;
+  public name: string = 'adnan';
+
+  get number() {
+    return this._number;
   }
-  set gsTest(value:number){
-    debugger
-    this._getsetTest = value;
+  set number(value) {
+    this._number = value;
   }
-    get number(){
-      return this._number;
-    }
-    set number(value){
-      this._number.valueOf;
-    }
-    increment(){
-      this._number++;
+  increment() {
+    this.number++;
+  }
+
+  decrement() {
+    this.number--;
+  }
+
+    //for docheck
+
+    public nameDoCheck: string = 'adnanja';
+
+    user = {
+      name: 'adnanj'
     }
 
-    decrement(){
-      this._number--;
+    updateValue(){
+      this.user.name = 'adnanjaved';
     }
-    constructor(){
-      this.gsTest = 4;
-      console.log(this.gsTest);
-      console.log(this._getsetTest);
 
-    }
 
 }
+

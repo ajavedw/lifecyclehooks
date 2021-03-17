@@ -1,3 +1,18 @@
-<app-child [myNewNumber] = "number"></app-child>
+<app-child [myNewNumber] = "number" [myName]="name" [myNameDoCheck]= "user"></app-child>
 <button (click)="decrement()">Subtract</button>
 <button (click)="increment()">Add</button>
+<br>
+<hr>
+<a (click)="updateValue()">doCheck</a>
+
+<ul>
+  <b>Order of execution is </b>
+  <li>ngOnChanges</li>
+  <li>ngOnInit</li>
+  <li>ngDoCheck</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+<a href="https://www.youtube.com/watch?v=0KWQLFI8mFE">YOutube video link</a>
